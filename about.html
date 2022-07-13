@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.mcom.vn/assets/fontawesome/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .banner-img {
+            width: 1200px;
+            height: 700px;
+            margin-top: 15px;
+        }
+        .swiper-pagination {
+            position: relative;
+            margin-top: 15px;
+            font-size: large;
+        }
+        .information-box {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #slideshow { 
+            box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+        }
+        .fluid1 h1 {
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .fluid2 {
+            border-top: 1px solid #ddd;
+        }
+        .img-story {
+            width: 420px;
+        }
+        .story-box {
+            border: 1px solid #ddd;
+            height: 600px;
+        }
+
+        .story-box h4,p {
+            padding: 10px;
+        }
+        ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar" id="nav">
+            <div class="container">
+                <div class="container-fluid mt-3 header-top">
+                    <div class="row">
+                        <div class="col-sm-4 ">
+                        Get free shipping – Free 30 day money back guarantee
+                        </div>
+                        <div class="col-sm-2 ">
+                        Store Locations
+                        </div>
+                        <div class="col-sm-2 ">
+                        Track your orders
+                        </div>
+                        <div class="col-sm-2 ">
+                        Hotline: 0123456789
+                        </div>
+                        <div class="col-sm-2 ">
+                        Quality Guarantee Of Products
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-fluid mt-3 header-mid">
+                    <div class="row header-mid-row">
+                        <div class="col-sm-2  header-logo">
+                        <a class="logo" href="/index.html">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        </div>
+                        <div class="col-sm-7  menu-list ">
+                            <ul>
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="categories.html">CATEGORIES</a>
+                                </li>
+                                <li>
+                                    <a href="sign_in.html">SIGN IN</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">ABOUT US</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3  header-info ">
+                            <a href="cart.html" class="cart">
+                                <i class="fa-solid fa-cart-shopping">
+                                    <span>0</span>
+                                </i>
+                            </a>
+                            <a href="sign_in.html" class="account">
+                                <i class="fa-light fa-user">
+                                </i>
+                            </a>
+     
+                            <div class="dropdown">
+                                    <button onclick="myFunction()" class="menu-bar dropbtn">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <ul>
+                                            <li>
+                                                <a href="index.html">HOME</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories.html">CATEGORIES</a>
+                                            </li>
+                                            <li>
+                                                <a href="sign_in.html">SIGN IN</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">ABOUT US</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">CONTACT US</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+    
+                        // Close the dropdown menu if the user clicks outside of it
+                        window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+    
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                            }
+                        }
+                        }
+                        document.addEventListener("DOMContentLoaded", function(){
+                        window.addEventListener('scroll', function() {
+                            if (window.scrollY > 50) {
+                                document.getElementById('nav').classList.add('fixed-top');
+                                // add padding top to show content behind navbar
+                                document.getElementById('nav').style.backgroundColor = "#ddd";
+                                navbar_height = document.querySelector('.navbar').offsetHeight;
+                                document.body.style.paddingTop = navbar_height + 'px';
+                               
+                            } else {
+                                document.getElementById('nav').classList.remove('fixed-top');
+                                // remove padding top from body
+                                document.getElementById('nav').style.backgroundColor = "#fff";
+                                document.body.style.paddingTop = '0';
+                            } 
+                        });
+                        }); 
+                  </script>
+            </div>
+    
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="container-fluid mt-3 header-bottom-container">
+                    <div class="row header-bottom-row">
+                        <div class="col-sm-2 header-bottom-left">
+                            <span>ALL CATEGORIES</span>
+                                <i class="fa-regular fa-bars"></i>
+                        </div>
+                        <div class="col-sm-7 header-bottom-center">
+                            <input type="search" placeholder="Search Products...." >
+                            <button class="btn primary-btn">
+                                Search
+                            </button>
+                        </div>
+                        <div class="col-sm-3 header-bottom-right">
+                            <a href="">
+                                Hot Products
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <main>
+            <section>
+                <div class="container-fluid mt-3 main-container-left ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 main-container-center">
+                                    <!-- Carousel -->
+                                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                                    <!-- Indicators/dots -->
+                                    <div class="carousel-indicators slide-button">
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                                    </div>
+                                    
+                                    <!-- The slideshow/carousel -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./img resize/banner_1.jpg" alt="Banner1" class="d-block" style="width:100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img resize/banner_2.jpg" alt="Banner2" class="d-block" style="width:100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img resize/banner_3.jpg" alt="Banner3" class="d-block" style="width:100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img resize/banner_4.jpg" alt="Banner4" class="d-block" style="width:100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img resize/banner_5.jpg" alt="Banner5" class="d-block" style="width:100%">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Left and right controls/icons -->
+                                    <button class="carousel-control-prev switch-button" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next switch-button" type="button" data-bs-target="#demo" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                    
+            </section>
+            <br>
+            <div class="information-box">
+                <h1>
+                    Organic farming: Benefits for people and our planet
+                </h1>
+                <p>
+                    Nowadays, more and more people are paying special attention to the food they eat and where it comes from. Whether for health or environmental reasons, the purchase of organic products is on the rise, and many are trying to include this practice in their daily lives. 
+                </p>
+                <p>
+                    It is in this context that Canada’s Organic Week is taking place from September 13th to 19th. This week-long celebration organised by both the Canadian Organic Trade Association and Canadian Organic Growers is a time during which events are organised on farms and in retail stores across the country. It is also the perfect opportunity for consumers to try organic products, and for Camino to highlight the importance we place on using organic ingredients in all our products.
+                </p>
+                <h3>
+                    What is organic?
+                </h3>
+                <p>
+    
+                    Organic farming is based on respect for soils, ecosystems and people. This type of farming, therefore, prohibits the use of synthetic fertilizers, pesticides, and GMOs. In general, organic farmers favour crop rotation and foster greater biodiversity on their land. These techniques produce healthier and higher-quality products that preserve the health and safety of the people in our communities.
+                </p>
+                <h3>
+                    Benefits for the planet
+                </h3>
+                <p>
+                    Due to the absence of chemicals, organic farming preserves the nutrients in soils that are necessary for the life and development of thousands of insects and plant species. The land remains fertile for generations, unlike the land used by industrial agriculture, which quickly becomes poor. In addition, water management is monitored within the framework of organic farming to minimize waste of this resource, to prevent soil erosion, and to prevent the pollution of groundwater.
+                </p>
+                <p>
+                    Within the context of climate change, organic farming presents interesting solutions that can help reduce energy consumption (manufacturing synthetic fertilizers requires lots of energy), reduce greenhouse gas emissions, and keeps CO2 in the soil.
+                </p>
+                <h3>
+                    Benefits for people
+                </h3>
+                <p>
+                    Finally, organic farming makes a real difference for small-scale farmers around the world. Indeed, farmers exposed to chemical pesticides on a daily basis are more likely to develop cancer and neurological diseases. In addition, not having to buy polluting chemicals and machinery saves many farmers a lot of money and has positive health and environmental impacts within their community.
+                </p>
+              </div>
+        </main>
+        <div class="container-fluid mt-3 fluid1">
+            <h1>Distributor system In Viet Nam</h1>
+            <div class="row">
+              <div class="col p-3 ">
+                <ul>
+                    <li>
+                        <h3>At South</h3>
+                    </li>
+                    <li>Ho Chi Minh</li>
+                    <li>Bien Hoa</li>
+                    <li>Binh Duong</li>
+                    <li>Vung Tau</li>
+                </ul>
+              </div>
+              <div class="col p-3 ">
+                <ul>
+                    <li>
+                        <h3>At Middle</h3>
+                    </li>
+                    <li>Da Nang</li>
+                    <li>Da Lat</li>
+                    <li>Nha Trang</li>
+                    <li>Hue</li>
+                </ul>
+              </div>
+              <div class="col p-3  ">
+                <ul>
+                    <li>
+                        <h3>At North</h3>
+                    </li>
+                    <li>Ha Noi</li>
+                    <li>Hai Phong</li>
+                    <li>Thanh Hoa</li>
+                    <li>Thai Nguyen</li>
+                </ul>
+              </div>
+            </div>
+          </div>    
+          <div>
+            <div class="container-fluid mt-3 fluid2">
+                <div class="row">
+                    <div class="section-heading">
+                        <h2 class="new-product-heading">
+                            Organic Farm Stories
+                        </h2>
+    
+                        <a href="#" class="view-all-btn">
+                            View all
+                        </a>
+                    </div>
+                  <div class="col p-3 ">
+                      <div class="story-box">
+                        <img class="img-story" src="./images/img-story1.png" alt="story 1">
+                        <h4>
+                            <a href="#">
+                                Crager Hager Farm – Sharing Insight on USDA’s Organic Certification Cost Share Program
+                            </a>
+                        </h4>
+                            <p>
+                                Organic farmer and OFRF Board Chair Bryan Hager knows about organic farming and the process it takes to get certified. Hager and his wife Wendy own Crager Hager Farm, a diversified fruit and vegetable farm in Carroll County, Georgia. Their farm is a year-round operation that grows salad and cooking greens such as lettuce and spinach, and popular market items [...]
+                            </p>
+                      </div>
+                  </div>
+                  <div class="col p-3 ">
+                      <div class="story-box">
+                        <img class="img-story" src="./images/img-story2.png" alt="story 2">
+                        <h4>
+                            <a href="#">
+                                Fresh From the Fields: Farmwella
+                            </a>
+                        </h4>
+                        <p>
+                            March 5, 2021 – Cornelius Adewale founded Farmwella to help reduce poverty in his native Africa by empowering and supporting the next generation of farmers.
+                        </p>
+                      </div>
+                  </div>
+                  <div class="col p-3 ">
+                      <div class="story-box">
+                        <img class="img-story" src="./images/img-story3.png" alt="story 3">
+                        <h4>
+                            <a href="#">
+                                Fresh From the Fields: Gray Organic Farms
+                            </a>
+                        </h4>
+                        <p>
+                            January 19, 2021 – Stephen Gray and his family are the third generation to farm their land in Ashkum, Illinois, which they are transitioning to organic using practices such as cover crops and minimal tillage to build the soil and reduce disruption to soil life.                
+                        </p>
+                      </div>
+                  </div>
+                </div>
+              </div>    
+          </div>
+        <div class="clr"></div>
+    
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container ">
+                <div class="container-fluid mt-3 footer-container">
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            <a class="logo" href="#">
+                                <img src="./images/logo.png" alt="logo">
+                            </a>
+                            <div class="footer-row">
+                                <i class="fa-light fa-phone-rotary"></i>
+                                <a href="tel:0123456789">0123456789</a>
+                            </div>
+                            <div class="contact-info">
+                                <i class="fa-light fa-map-location-dot"></i>
+                                <span>Contact info</span>
+                            </div>
+                            <div class="contact-info-details">
+                                <a href="#">590 CMT8, District 10, HCMC</a>
+                            </div>
+                            <div class="social-list">
+                                <a href="#" clas="social-item">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </a>
+                                <a href="#" clas="social-item">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" clas="social-item">
+                                    <i class="fa-brands fa-twitter-square"></i>
+                                </a>
+                                <a href="#" clas="social-item">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-2 footer-col">
+                            <div class="footer-heading">
+                                Categories
+                            </div>
+                            <ul class="footer-menu-list">
+                                <li>
+                                    <a href="#">
+                                        Nutritious cereals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Fruit
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Vegetables
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Cooking spices
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 ">
+                            <div class="footer-heading">
+                                Information
+                            </div>
+                            <ul class="footer-menu-list">
+                                <li>
+                                    <a href="#">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Contact us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Suppliers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Address
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 ">
+                            <div class="footer-heading">
+                                My Account
+                            </div>
+                            <ul class="footer-menu-list">
+                                <li>
+                                    <a href="#">
+                                        Account info
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tracking order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Purchase history
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Member Grade
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <span class="copyright">
+                    &copy 2022 - Ecommerce software by Star Organic Farm team
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
